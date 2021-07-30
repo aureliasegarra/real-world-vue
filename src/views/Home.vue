@@ -8,6 +8,8 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
+// eslint-disable-next-line prettier/prettier
+"@/components/EventCard.vue"
 
 export default {
   name: "Home",
