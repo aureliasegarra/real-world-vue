@@ -1,10 +1,20 @@
 <template>
-  <div id="nav">
-    <router-link :to="{ name: 'event-list' }">List</router-link> |
-    <router-link :to="{ name: 'event-create' }">Create</router-link>
+  <div id="app">
+    <NavBar />
+    <router-view />
   </div>
-  <router-view />
 </template>
+
+<script>
+import Navbar from "@/components/NavBar.vue";
+
+export default {
+  components: {
+    // eslint-disable-next-line vue/no-unused-components
+    Navbar,
+  },
+};
+</script>
 
 <style>
 #app {
