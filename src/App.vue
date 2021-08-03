@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import Navbar from "@/components/NavBar.vue";
+import NavBar from "@/components/NavBar";
 
 export default {
   components: {
     // eslint-disable-next-line vue/no-unused-components
-    Navbar,
+    NavBar,
   },
 };
 </script>
