@@ -2,13 +2,12 @@
   <div>
     <h1>Events Listing</h1>
     <EventCard v-for="event in events" :key="event.id" :event="event" />
-    <BaseIcon />
   </div>
 </template>
 
 <script>
 import EventCard from "@/components/EventCard.vue";
-import EventService from '@/services/EventService.js';
+import EventService from "@/services/EventService.js";
 
 export default {
   components: {
@@ -16,7 +15,7 @@ export default {
   },
   data() {
     return {
-      events:[] 
+      events: [],
     }
   },
   created() {

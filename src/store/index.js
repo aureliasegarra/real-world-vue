@@ -1,8 +1,23 @@
 import { createStore } from "vuex";
 
 export default createStore({
-  state: {},
+  state: {
+    user: { id: "abc123", name: "Adam Jahr" },
+    categories: [
+      "sustainability",
+      "nature",
+      "animal welfare",
+      "housing",
+      "education",
+      "food",
+      "community",
+    ],
+  },
   mutations: {},
   actions: {},
-  modules: {},
+  getters: {
+    categoryLength: state => {
+      return state.categories.length
+    }
+  },
 });
